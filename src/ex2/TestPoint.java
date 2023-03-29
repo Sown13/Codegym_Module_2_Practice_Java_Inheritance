@@ -15,6 +15,8 @@ public class TestPoint {
 //        Wrong decleration: sub reference cannot make obj of its super
 //        Point3D p23_1 = new Point2D(1,2);
 //        System.out.println(p23_1);
+        MovablePoint m1 = new MovablePoint(1,2,3,4);
+        System.out.println(m1);
+        System.out.println(m1.move());
     }
-
 }

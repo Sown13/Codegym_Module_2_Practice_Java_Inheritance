@@ -1,8 +1,10 @@
 package ex2;
 
-public class Point3D extends Point2D{
+public class Point3D extends Point2D {
     private float z;
-    public Point3D(){}
+
+    public Point3D() {
+    }
 
     public Point3D(float z) {
         this.z = z;
@@ -16,12 +18,14 @@ public class Point3D extends Point2D{
     public float getZ() {
         return z;
     }
-    public void setXYZ(float x, float y, float z){
-        setXY(x,y);
+
+    public void setXYZ(float x, float y, float z) {
+        setXY(x, y);
         this.z = z;
     }
-    public float[] getXYZ(){
-        float[] arr = {getX(),getY(),z};
+
+    public float[] getXYZ() {
+        float[] arr = {getX(), getY(), z};
         return arr;
     }
 
@@ -31,8 +35,8 @@ public class Point3D extends Point2D{
 
     @Override
     public String toString() {
-        return "Point3D{" +
-                "z=" + z +
-                '}' + "subclass of "+ super.toString();
+        return "Point3D{" + "x= " + getX() + "," + "y= " + getY() + ", " +
+        "z=" + z +
+                '}' + "subclass of " + "Point2D";
     }
 }
