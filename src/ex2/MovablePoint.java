@@ -54,4 +54,8 @@ public class MovablePoint extends Point2D{
         setY(getY() + ySpeed);
         return this;
     }
+    @Override
+    public boolean testMethod(){
+        return false;
+    }
 }

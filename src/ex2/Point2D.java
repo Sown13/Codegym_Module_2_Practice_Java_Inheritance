@@ -43,4 +43,7 @@ public class Point2D {
                 ", y=" + y +
                 '}';
     }
+    public boolean testMethod(){
+        return true;
+    }
 }
